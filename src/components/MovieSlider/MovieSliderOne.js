@@ -69,7 +69,7 @@ export default function MovieSliderOne() {
                   HOLLYWOOD ELON
                 </h2>
                 <p className="banner-description pe-xl-5 me-xl-5">
-                  {CA ? CA : `🎬 CA: Launching on Pump.fun – July 24`}
+                  {CA ? CA : `🎬 CA: Launching on Pump.fun – July 29`}
                 </p>
                 <div className="d-flex align-items-center justify-content-center justify-content-lg-start gap-xl-4 gap-2">
             
@@ -105,7 +105,7 @@ export default function MovieSliderOne() {
                   HOLLYWOOD ELON
                 </h2>
                 <p className="banner-description pe-xl-5 me-xl-5">
-                  {CA ? CA : `🎬 CA: Launching on Pump.fun – July 24`}
+                  {CA ? CA : `🎬 CA: Launching on Pump.fun – July 29`}
                 </p>
                 <div className="d-flex align-items-center justify-content-center justify-content-lg-start gap-xl-4 gap-2">
          
@@ -140,7 +140,7 @@ export default function MovieSliderOne() {
                   HOLLYWOOD ELON
                 </h2>
                 <p className="banner-description pe-xl-5 me-xl-5">
-                  {CA ? CA : `🎬 CA: Launching on Pump.fun – July 24`}
+                  {CA ? CA : `🎬 CA: Launching on Pump.fun – July 29`}
                 </p>
                 <div className="d-flex align-items-center justify-content-center justify-content-lg-start gap-xl-4 gap-2">
                  
