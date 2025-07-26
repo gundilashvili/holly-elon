@@ -41,7 +41,7 @@ export default function WeeklyPopularOne() {
           <div className="d-inline-flex align-item-center section-header">
             <span className="mb-2">🎬</span>
             <h3 className="section-title mt-1 mt-lg-2 mb-0 lh-1">
-             HOLLY MOVIES
+              HOLLY MOVIES
             </h3>
           </div>
           <Link
@@ -66,15 +66,21 @@ export default function WeeklyPopularOne() {
             </svg>
           </Link>
         </div>
-      </div> 
+      </div>
       {movies && movies.length > 0 && (
-        <Swiper {...swiperOptions} className="swiper movie-card-slider-sm">
-          {movies.map((movie, index) => (
-            <SwiperSlide key={index}>
-              <MovieCard movie={movie} />
-            </SwiperSlide>
-          ))}
-        </Swiper>
+        <div style={{ width: "100%" }}>
+          <Swiper
+            {...swiperOptions}
+            className="swiper movie-card-slider-sm"
+            style={{ width: "100%" }}
+          >
+            {movies.map((movie, index) => (
+              <SwiperSlide key={index} style={{ width: "auto" }}>
+                <MovieCard movie={movie} />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
       )}
     </div>
   );

@@ -204,18 +204,6 @@ const popularOneMoviesData = [
 const weeklyPopularOneMoviesData = [
 
   {
-    image: Trending3,
-    isRibbon: false,
-    count: 0,
-    videoSrc: "https://www.youtube.com/watch?v=78wi2t6Xass",
-    href: "movie-details",
-    title: "Elon Stark just dropped from the skies and he's not here to build rockets..",
-    rating: "6.8",
-    duration: "02h 30m",
-    quality: "4k",
-    categories: ["Action", "Comedy", "Crime"],
-  },
-  {
     image: Cook,
     isRibbon: false,
     count: 0,
@@ -251,6 +239,19 @@ const weeklyPopularOneMoviesData = [
     quality: "4k",
     categories: ["Action", "Comedy", "Crime"],
   },
+  
+  {
+    image: Trending3,
+    isRibbon: false,
+    count: 0,
+    videoSrc: "https://www.youtube.com/watch?v=78wi2t6Xass",
+    href: "movie-details",
+    title: "Elon Stark just dropped from the skies and he's not here to build rockets..",
+    rating: "6.8",
+    duration: "02h 30m",
+    quality: "4k",
+    categories: ["Action", "Comedy", "Crime"],
+  },
   {
     image: Trending1,
     isRibbon: false,
@@ -275,6 +276,7 @@ const weeklyPopularOneMoviesData = [
     quality: "4k",
     categories: ["Action", "Comedy", "Crime"],
   },
+  
 ];
 
 const originaOnelMoviesData = [

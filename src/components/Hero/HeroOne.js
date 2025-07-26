@@ -248,32 +248,62 @@ export default function HeroOne() {
                       <h2 className="banner-title fw-bold text-uppercase">
                         {slide.title}
                       </h2>
-                      <div className="d-flex align-items-center pe-xl-5 me-xl-5" style={{ fontSize: "28px", marginBottom: 20 }}>
-                        <p className="banner-description mb-0 me-2">
+                      <div
+                        className="d-flex align-items-center flex-column flex-sm-row pe-xl-5 me-xl-5"
+                        style={{
+                          fontSize: "30px",
+                          marginBottom: 20,
+                        }}
+                      >
+                        <p
+                          className="banner-description mb-2 mb-sm-0 me-0 me-sm-2 text-center text-sm-start"
+                          style={{
+                            fontSize: "22px",
+                          }}
+                        >
                           {slide.description}
                         </p>
-                        <button
-                          onClick={handleCopy}
-                          style={{
-                            background: "none",
-                            border: "none",
-                            cursor: "pointer",
-                            color: "#fff",
-                            fontSize: "20px",
-                          }}
-                          title={copied ? "Copied!" : "Copy"}
-                        >
-                          {copied ? (
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="green" viewBox="0 0 24 24">
-                              <path d="M20.285 6.709l-11.285 11.285-5.285-5.285 1.414-1.414 3.871 3.871 9.871-9.871z" />
-                            </svg>
-                          ) : (
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
-                              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-                            </svg>
-                          )}
-                        </button>
+                        {!!CA && (
+                          <button
+                            onClick={handleCopy}
+                            style={{
+                              background: "none",
+                              border: "none",
+                              cursor: "pointer",
+                              color: "#fff",
+                              fontSize: "20px",
+                            }}
+                            title={copied ? "Copied!" : "Copy"}
+                          >
+                            {copied ? (
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="20"
+                                height="20"
+                                fill="green"
+                                viewBox="0 0 24 24"
+                              >
+                                <path d="M20.285 6.709l-11.285 11.285-5.285-5.285 1.414-1.414 3.871 3.871 9.871-9.871z" />
+                              </svg>
+                            ) : (
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="20"
+                                height="20"
+                                fill="none"
+                                stroke="currentColor"
+                                strokeWidth="2"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                viewBox="0 0 24 24"
+                              >
+                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                              </svg>
+                            )}
+                          </button>
+                        )}
+
                       </div>
                       <div className="d-flex align-items-center justify-content-center justify-content-lg-start gap-xl-4 gap-2">
                         <button
