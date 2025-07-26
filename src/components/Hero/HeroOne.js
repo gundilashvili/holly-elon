@@ -4,6 +4,9 @@ import { useState } from "react";
 import Link from "next/link";
 import PumpFun from "@/../public/assets/images/logo/pump-fun-dark.png";
 import DexLogo from "@/../public/assets/images/logo/dex.png";
+import XLogo from "@/../public/assets/images/logo/x.png";
+import YoutubeLogo from "@/../public/assets/images/logo/youtube.png";
+import TelegramLogo from "@/../public/assets/images/logo/tg.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import {
   Navigation,
@@ -102,6 +105,14 @@ export default function HeroOne() {
                 <div className="row justify-content-lg-between justify-content-center">
                   <div className="col-lg-6 col-md-9 col-sm-12 align-self-center">
                     <div className="content text-center text-lg-start">
+
+
+
+
+                      <h2 className="banner-title fw-bold text-uppercase">
+                        {slide.title}
+                      </h2>
+
                       <ul className="movie-info-list d-flex align-item-center justify-content-center justify-content-lg-start gap-1 gap-lg-2">
                         <li
                           className="movie-info-list--item"
@@ -122,18 +133,7 @@ export default function HeroOne() {
                           }}
                           onClick={() => window.open("https://x.com/HollyElon", "_blank")}
                         >
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="17"
-                            height="15"
-                            viewBox="0 0 17 15"
-                            fill="none"
-                          >
-                            <path
-                              d="M13.2402 0.656738H15.6604L10.3731 6.69986L16.5932 14.9232H11.7229L7.90825 9.93578L3.54348 14.9232H1.12184L6.77721 8.45939L0.810173 0.656738H5.80416L9.25222 5.21542L13.2402 0.656738ZM12.3908 13.4746H13.7319L5.07547 2.02924H3.63639L12.3908 13.4746Z"
-                              fill="currentColor"
-                            />
-                          </svg>
+                           <Image src={XLogo} alt="Pump.fun" width={25} height={25} />
                           <span>{!CA ? "Twitter" : ""}</span>
                         </li>
 
@@ -157,9 +157,7 @@ export default function HeroOne() {
                           }}
                           onClick={() => window.open("https://t.me/hollyelon", "_blank")}
                         >
-                          <svg xmlns="http://www.w3.org/2000/svg" width="19" height="16" viewBox="0 0 24 24" fill="none">
-                            <path d="M9.036 16.569L9.438 20.535C9.935 20.535 10.144 20.316 10.404 20.062L12.62 17.939L16.539 20.813C17.261 21.208 17.768 20.999 17.952 20.127L21.347 3.644C21.598 2.576 20.947 2.103 20.253 2.37L2.508 9.21C1.46 9.618 1.466 10.212 2.331 10.477L6.873 11.863L17.844 5.376C18.355 5.083 18.823 5.266 18.434 5.589L9.036 16.569Z" fill="currentColor" />
-                          </svg>
+                           <Image src={TelegramLogo} alt="Pump.fun" width={35} height={35} />
                           <span>{!CA ? "Telegram" : ""}</span>
                         </li>
 
@@ -183,9 +181,7 @@ export default function HeroOne() {
                           }}
                           onClick={() => window.open("https://www.youtube.com/@hollyelon", "_blank")}
                         >
-                          <svg xmlns="http://www.w3.org/2000/svg" width="19" height="16" viewBox="0 0 19 16" fill="none">
-                            <path d="M9.51528 0.656738C9.98947 0.659457 11.1759 0.671406 12.4364 0.724002L12.8834 0.744302C14.1525 0.806895 15.4206 0.913825 16.0496 1.0965C16.8885 1.342 17.5479 2.05833 17.7707 2.96636C18.1256 4.40827 18.17 7.22255 18.1755 7.9036L18.1763 8.04473V8.05463C18.1763 8.05463 18.1763 8.05805 18.1763 8.06462L18.1755 8.20575C18.17 8.8868 18.1256 11.7011 17.7707 13.143C17.5448 14.0543 16.8854 14.7707 16.0496 15.0128C15.4206 15.1955 14.1525 15.3024 12.8834 15.365L12.4364 15.3853C11.1759 15.4379 9.98947 15.4498 9.51528 15.4526L9.30717 15.4534H9.29793C9.29793 15.4534 9.29483 15.4534 9.2887 15.4534L9.08077 15.4526C8.07716 15.4469 3.8809 15.3996 2.5463 15.0128C1.70737 14.7673 1.04799 14.051 0.825102 13.143C0.470261 11.7011 0.425904 8.8868 0.420364 8.20575V7.9036C0.425904 7.22255 0.470261 4.40827 0.825102 2.96636C1.05108 2.05497 1.71046 1.33864 2.5463 1.0965C3.8809 0.709667 8.07716 0.662491 9.08077 0.656738H9.51528ZM7.52227 4.81772V11.2916L12.8493 8.05463L7.52227 4.81772Z" fill="currentColor" />
-                          </svg>
+                          <Image src={YoutubeLogo} alt="Pump.fun" width={35} height={35} />
                           <span>{!CA ? "Youtube" : ""}</span>
                         </li>
 
@@ -209,7 +205,7 @@ export default function HeroOne() {
                             }}
                             onClick={() => window.open(`https://pump.fun/coin/${CA}`, "_blank")}
                           >
-                            <Image src={PumpFun} alt="Pump.fun" width={20} height={20} />
+                            <Image src={PumpFun} alt="Pump.fun" width={35} height={30} />
                             <span></span>
                           </li>
                         )}
@@ -235,77 +231,100 @@ export default function HeroOne() {
                             }}
                             onClick={() => window.open(`${DEX}`, "_blank")}
                           >
-                            <Image src={DexLogo} alt="Pump.fun" width={22} height={22} />
+                            <Image src={DexLogo} alt="Pump.fun" width={30} height={30} />
                             <span></span>
                           </li>
                         )}
 
 
                       </ul>
-
-
-
-                      <h2 className="banner-title fw-bold text-uppercase">
-                        {slide.title}
-                      </h2>
                       <div
-                        className="d-flex align-items-center flex-column flex-sm-row pe-xl-5 me-xl-5"
+                        className="d-flex align-items-center flex-wrap pe-xl-5 me-xl-5"
                         style={{
                           fontSize: "30px",
                           marginBottom: 20,
                         }}
                       >
                         <p
-                          className="banner-description mb-2 mb-sm-0 me-0 me-sm-2 text-center text-sm-start"
+                          className="banner-description mb-0 me-2 text-center text-sm-start responsive-description"
                           style={{
                             fontSize: "22px",
+                            whiteSpace: "nowrap",
                           }}
                         >
                           {slide.description}
                         </p>
-                        {!!CA && (
-                          <button
-                            onClick={handleCopy}
-                            style={{
-                              background: "none",
-                              border: "none",
-                              cursor: "pointer",
-                              color: "#fff",
-                              fontSize: "20px",
-                            }}
-                            title={copied ? "Copied!" : "Copy"}
-                          >
-                            {copied ? (
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="20"
-                                height="20"
-                                fill="green"
-                                viewBox="0 0 24 24"
-                              >
-                                <path d="M20.285 6.709l-11.285 11.285-5.285-5.285 1.414-1.414 3.871 3.871 9.871-9.871z" />
-                              </svg>
-                            ) : (
-                              <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="20"
-                                height="20"
-                                fill="none"
-                                stroke="currentColor"
-                                strokeWidth="2"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                viewBox="0 0 24 24"
-                              >
-                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-                              </svg>
-                            )}
-                          </button>
-                        )}
 
+                        <style jsx>{`
+                          @media (max-width: 576px) {
+                            .responsive-description {
+                              font-size: 12px !important;
+                              white-space: normal !important;
+                              text-align: center !important;
+                            }
+                          }
+                        `}</style>
+
+
+                        {!!CA && (
+                          <div className="copy-button-wrapper">
+                            <button
+                              onClick={handleCopy}
+                              style={{
+                                background: "none",
+                                border: "none",
+                                cursor: "pointer",
+                                color: "#fff",
+                                fontSize: "20px",
+                              }}
+                              title={copied ? "Copied!" : "Copy"}
+                            >
+                              {copied ? (
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="20"
+                                  height="20"
+                                  fill="green"
+                                  viewBox="0 0 24 24"
+                                >
+                                  <path d="M20.285 6.709l-11.285 11.285-5.285-5.285 1.414-1.414 3.871 3.871 9.871-9.871z" />
+                                </svg>
+                              ) : (
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="20"
+                                  height="20"
+                                  fill="none"
+                                  stroke="currentColor"
+                                  strokeWidth="2"
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                  viewBox="0 0 24 24"
+                                >
+                                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                </svg>
+                              )}
+                            </button>
+
+                          </div>
+                        )}
+                        <style jsx>{`
+                        @media (max-width: 576px) {
+                          .copy-button-wrapper {
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            margin-top: 10px;
+                          }
+                        }
+                      `}</style>
                       </div>
-                      <div className="d-flex align-items-center justify-content-center justify-content-lg-start gap-xl-4 gap-2">
+
+                      <div
+                        className="d-flex flex-column flex-sm-row align-items-center gap-2 mt-3 mt-sm-0"
+                        style={{ flexWrap: 'wrap' }}
+                      >
                         <button
                           onClick={() => setShowModal(true)}
                           className="hl-btn big-btn lh-1 btn-base fs-18 fw-bold radius-20 flex-shrink-0 text-uppercase"
@@ -331,7 +350,7 @@ export default function HeroOne() {
                         </button>
                         {!!CA && (
                           <button
-                            className="hl-btn big-btn lh-1 trans-btn fs-18 radius-20 fw-medium flex-shrink-0 text-uppercase btn-inactive"
+                            className="hl-btn big-btn lh-1 trans-btn fs-18 radius-20 fw-medium flex-shrink-0 text-uppercase btn-inactive ca-button"
                             onClick={(e) => {
                               e.preventDefault()
                               const CA = process.env.NEXT_PUBLIC_CA;
@@ -349,7 +368,6 @@ export default function HeroOne() {
                             />
                             <span>{slide.btnOneText}</span>
                           </button>
-
                         )}
 
 

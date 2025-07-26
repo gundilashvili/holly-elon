@@ -5,33 +5,27 @@ const menuOneData = {
   href: "/",
   btnText: "Buy Now",
   menus: [
-     {
+    {
       name: "Home",
       href: "/",
-    }, 
+    },
+    {
+      name: "Trailers",
+      href: "trailers",
+    },
     {
       name: "Movies",
-      href: "#",
-      subMenus: [ 
-        {
-          name: "Trailers",
-          href: "trailers",
-        },
-        {
-          name: "Movie List",
-          href: "movie-list",
-        }, 
-      ],
-    }, 
+      href: "movie-list",
+    },
     {
       name: "Shorts",
       href: "shorts",
-    }, 
+    },
   ],
 };
 
 const menuTwoData = {
-  primaryMenus: [ 
+  primaryMenus: [
   ],
 };
 
