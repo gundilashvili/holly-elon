@@ -2,9 +2,8 @@ import HeroSlideImageOne from "@/../public/assets/images/hero/hero-slide-1.png";
 import HeroSlideImageTwo from "@/../public/assets/images/hero/hero-slide-2.png";
 import HeroSlideImageThree from "@/../public/assets/images/hero/hero-slide-3.png";
 
-import HeroCardSlideImageOne from "@/../public/assets/images/hero/1.png";
-import HeroCardSlideImageTwo from "@/../public/assets/images/hero/2.png";
-import HeroCardSlideImageThree from "@/../public/assets/images/hero/3.png";
+import HeroCardSlideImageOne from "@/../public/assets/images/hero/1.png"; 
+import HeroCardSlideImageThree from "@/../public/assets/images/hero/elon_cover.gif";
 
 
 const CA = process.env.NEXT_PUBLIC_CA
