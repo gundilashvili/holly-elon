@@ -16,7 +16,7 @@ const liveStreamingFeatureData = {
       image: lockedLogo,
       title: "10% Dev Wallet (Locked)",
       description:
-        "Only 10% of the supply is allocated to the dev wallet – locked for 3 weeks to prove we're here for the memes, not the rugs.",
+        "Only 5% of the supply is allocated to the dev wallet – locked for 3 weeks to prove we're here for the memes, not the rugs.",
     },
     {
       image: moneyBag,

@@ -133,7 +133,7 @@ export default function HeroOne() {
                           }}
                           onClick={() => window.open("https://x.com/HollyElon", "_blank")}
                         >
-                           <Image src={XLogo} alt="Pump.fun" width={25} height={25} />
+                          <Image src={XLogo} alt="Pump.fun" width={25} height={25} />
                           <span>{!CA ? "Twitter" : ""}</span>
                         </li>
 
@@ -157,7 +157,7 @@ export default function HeroOne() {
                           }}
                           onClick={() => window.open("https://t.me/hollyelon", "_blank")}
                         >
-                           <Image src={TelegramLogo} alt="Pump.fun" width={35} height={35} />
+                          <Image src={TelegramLogo} alt="Pump.fun" width={35} height={35} />
                           <span>{!CA ? "Telegram" : ""}</span>
                         </li>
 
@@ -239,7 +239,7 @@ export default function HeroOne() {
 
                       </ul>
                       <div
-                        className="d-flex align-items-center flex-wrap pe-xl-5 me-xl-5"
+                        className="d-flex align-items-center flex-wrap pe-xl-5 me-xl-5 justify-content-sm-start justify-content-center"
                         style={{
                           fontSize: "30px",
                           marginBottom: 20,
