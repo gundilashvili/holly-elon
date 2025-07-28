@@ -80,7 +80,7 @@ export default function MovieSliderOne() {
                   HOLLYWOOD ELON
                 </h2>
                 <p className="banner-description pe-xl-5 me-xl-5 responsive-description">
-                  {CA ? `CA:   ${CA} ` : `🎬 CA: Launching on Pump.fun – July 29`}
+                  {CA ? `CA:   ${CA} ` : `🎬 CA: Launching on Pump.fun – July 30`}
                   {!!CA && (
                     <button
                       onClick={handleCopy}
@@ -165,7 +165,7 @@ export default function MovieSliderOne() {
                   HOLLYWOOD ELON
                 </h2>
                 <p className="banner-description pe-xl-5 me-xl-5 responsive-description">
-                  {CA ? `CA:   ${CA} ` : `🎬 CA: Launching on Pump.fun – July 29`}
+                  {CA ? `CA:   ${CA} ` : `🎬 CA: Launching on Pump.fun – July 30`}
                   {!!CA && (
                     <button
                       onClick={handleCopy}
@@ -250,7 +250,7 @@ export default function MovieSliderOne() {
                   HOLLYWOOD ELON
                 </h2>
                 <p className="banner-description pe-xl-5 me-xl-5 responsive-description">
-                  {CA ? `CA:   ${CA} ` : `🎬 CA: Launching on Pump.fun – July 29`}
+                  {CA ? `CA:   ${CA} ` : `🎬 CA: Launching on Pump.fun – July 30`}
                   {!!CA && (
                     <button
                       onClick={handleCopy}
